@@ -1,7 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@400;500&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background: #bbbbbb;
     padding: 20px 0;
 }
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/* pagina home */
+
+#banner {
+    width: 100%;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    font-size: 3em;
+    margin: 1em 0;
+    clear: left;
+    font-family: 'Comforter', sans-serif;
+}
+
+.principal p {
+    margin-bottom: 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.imgBeneficios {
+    width: 60%;
+}
+
+#utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {}
+
+
+/* página produtos */
 
 .caixa {
     position: relative;
@@ -28,7 +80,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: #c78c19;
     text-decoration: underline;
 }
@@ -51,15 +103,15 @@ nav a:hover{
     border-radius: 10px;
 }
 
-.produtos li:hover{
+.produtos li:hover {
     border-color: #c78c19;
 }
 
-.produtos li:active{
+.produtos li:active {
     border-color: #088c19;
 }
 
-.produtos li:hover h2{
+.produtos li:hover h2 {
     font-size: 35px;
 }
 
@@ -77,6 +129,70 @@ nav a:hover{
     font-weight: bolder;
     margin: 10px 0 0;
 }
+
+
+/* página de contatos */
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inputGlobal {
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+}
+
+.checkbox {
+    margin: 20px 10px 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    color: #fff;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+
+/* tabela de horarios */
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: #fff;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+
+/* rodapé */
 
 footer {
     text-align: center;
