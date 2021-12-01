@@ -8,16 +8,20 @@ header {
     padding: 20px 0;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
+main {}
 
 
 /* pagina home */
 
 #banner {
     width: 100%;
+}
+
+.principal {
+    width: 940px;
+    margin: 0 auto;
+    padding: 3em 0;
+    background: #FEFEFE;
 }
 
 .tituloPrincipal {
@@ -27,6 +31,38 @@ main {
     clear: left;
     font-family: 'Comforter', sans-serif;
 }
+
+
+/* primeira letra em negrito  */
+
+
+/* .tituloPrincipal::first-letter {
+    font-weight: bold;
+} */
+
+
+/* coloca algum texto apenas em exibição antes */
+
+
+/* .tituloPrincipal::before {
+    content: "[";
+} */
+
+
+/* coloca algum texto apenas em exibição depois */
+
+
+/* .tituloPrincipal::after {
+    content: "]";
+} */
+
+
+/* primeira linha da tag p em italico */
+
+
+/* p::first-line {
+    font-style: italic;
+} */
 
 .principal p {
     margin-bottom: 1em;
@@ -40,8 +76,51 @@ main {
     font-style: italic;
 }
 
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+#mapa {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudoBeneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.itens {
+    line-height: 1.5em;
+}
+
+.itens::before {
+    content: "♠";
+}
+
+.itens:nth-child(1) {
+    font-weight: bold;
+}
+
 .imgBeneficios {
     width: 60%;
+}
+
+#listaBeneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #utensilios {
@@ -50,7 +129,10 @@ main {
     margin: 0 20px 20px 0;
 }
 
-.mapa {}
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
 
 
 /* página produtos */
@@ -204,4 +286,29 @@ footer {
     color: white;
     font-size: 13px;
     margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa,
+    .principal,
+    .conteudoBeneficios,
+    #mapa,
+    .video,
+    .produtos {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .listaBeneficios,
+    .imgBeneficios {
+        width: 100%;
+    }
+    .produtos li {
+        width: 80%;
+        margin: 1em 2.2em;
+    }
 }
